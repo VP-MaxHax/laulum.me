@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "seinam-me"
+version = "0.1.0"
+description = ""
+authors = ["VP-MaxHax <vp.juselius@gmail.com>"]
+readme = "README.md"
+packages = [{include = "seinam"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

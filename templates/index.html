@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seinä.me | Lauluja seinistä</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Seinä.me | Lauluja seinistä</h1>
+    <h2>Songs</h2>
+    <ul>
+        {% for song in songs %}
+            <li><a href="{{ url_for('song', song_id=song.id) }}">{{ song.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
