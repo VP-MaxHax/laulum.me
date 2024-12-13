@@ -41,4 +41,4 @@ def generate_static_site():
                 f.write(song_html)
 
 if __name__ == '__main__':
-    generate_static_site()
+    app.run(debug=True)
